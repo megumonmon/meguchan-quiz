@@ -1,0 +1,64 @@
+/* Googleフォントの読み込みはCSSファイルの先頭で行う */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Mochiy+Pop+One&display=swap');
+
+body {
+  font-family: "Kiwi Maru", serif; /* Kiwi Maruフォントを全体に適用 */
+  font-size: 50px;
+  text-align: center;
+  background-color: #fff9f0;
+  padding: 50px;
+}
+
+h1 {
+  font-family: "Mochiy Pop One", sans-serif; /* h1だけ別のフォントに */
+  font-size: 60px;
+}
+
+/* 修正箇所：ボタンのスタイルを整理 */
+button {
+  font-size: 50px;
+  padding: 50px 50px;
+  text-align: center;
+  margin: 50px; /* ここは元のままでもOK */
+}
+
+/* 選択肢ボタンと次の問題ボタンの配置 */
+#quiz-container button {
+  display: inline-block; /* インライン要素として扱う */
+  margin: 50px;
+}
+
+#result-image {
+　width:　100px;
+  max-width: 70%;
+  margin: 20px auto 0;
+  display: block;
+}
+
+#final-result-image {
+　width:　100px;
+  max-width: 80%;
+  margin: 20px auto 0;
+  display: block;
+}
+
+#final-result-video {
+　width:　100px;
+  max-width: 80%;
+  margin: 20px auto 0;
+  display: block;
+}
+
+#quiz-container{
+  text-align: center;
+}
+
+#result-screen {
+  text-align: center;
+}
+
+/* 修正箇所：結果画面のボタンを個別に中央寄せする */
+#result-screen button {
+  display: block;
+  margin: 50px auto;
+}
